@@ -1,0 +1,20 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: conradpacesa-com-tls
+spec:
+  secretName: conradpacesa-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: conradpacesa.com
+  dnsNames:
+    - conradpacesa.com
+    - www.conradpacesa.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - conradpacesa.com
+          - www.conradpacesa.com
