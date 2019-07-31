@@ -12,7 +12,7 @@ spec:
     - hosts:
         - conradpacesa.com
         - www.conradpacesa.com
-        secretName: conradpacesa-com
+      secretName: conradpacesa-com
   rules:
     - host: conradpacesa.com
       http:
