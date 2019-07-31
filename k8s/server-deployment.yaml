@@ -24,9 +24,9 @@ spec:
               value: '6379'
             - name: PGUSER
               value: postgres
-            - name: POSTGRES_HOST
+            - name: PGHOST
               value: postgres-cluster-ip-service
-            - name: PG_PORT
+            - name: PGPORT
               value: '5432'
             - name: PGDATABASE
               value: postgres
